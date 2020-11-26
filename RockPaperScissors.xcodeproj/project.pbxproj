@@ -11,6 +11,8 @@
 		663617D9256DA4900087447B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663617D8256DA4900087447B /* ContentView.swift */; };
 		663617DB256DA4920087447B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663617DA256DA4920087447B /* Assets.xcassets */; };
 		663617DE256DA4920087447B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663617DD256DA4920087447B /* Preview Assets.xcassets */; };
+		663617E9256DA4FD0087447B /* WinLose.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 663617E7256DA4FD0087447B /* WinLose.mlmodel */; };
+		663617EA256DA4FD0087447B /* RPS.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 663617E8256DA4FD0087447B /* RPS.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		663617DA256DA4920087447B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		663617DD256DA4920087447B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		663617DF256DA4920087447B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		663617E7256DA4FD0087447B /* WinLose.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = WinLose.mlmodel; path = "RPS Scissors CoreML Models/WinLose.mlmodel"; sourceTree = SOURCE_ROOT; };
+		663617E8256DA4FD0087447B /* RPS.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = RPS.mlmodel; path = "RPS Scissors CoreML Models/RPS.mlmodel"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		663617D5256DA4900087447B /* RockPaperScissors */ = {
 			isa = PBXGroup;
 			children = (
+				663617E6256DA4A30087447B /* CoreML Files */,
 				663617D6256DA4900087447B /* RockPaperScissorsApp.swift */,
 				663617D8256DA4900087447B /* ContentView.swift */,
 				663617DA256DA4920087447B /* Assets.xcassets */,
@@ -67,6 +72,15 @@
 				663617DD256DA4920087447B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		663617E6256DA4A30087447B /* CoreML Files */ = {
+			isa = PBXGroup;
+			children = (
+				663617E8256DA4FD0087447B /* RPS.mlmodel */,
+				663617E7256DA4FD0087447B /* WinLose.mlmodel */,
+			);
+			path = "CoreML Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663617EA256DA4FD0087447B /* RPS.mlmodel in Sources */,
 				663617D9256DA4900087447B /* ContentView.swift in Sources */,
+				663617E9256DA4FD0087447B /* WinLose.mlmodel in Sources */,
 				663617D7256DA4900087447B /* RockPaperScissorsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
