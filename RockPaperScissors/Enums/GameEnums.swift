@@ -13,7 +13,7 @@ enum Choices: String {
     case scissors = "Scissors"
 }
 
-enum WinOrLose: String {
+enum WinOrLoseOrDraw: String {
     case win = "Win"
     case lose = "Lost"
     case draw = "Draw"

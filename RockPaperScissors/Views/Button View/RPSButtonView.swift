@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RPSButtonView: View {
     var imageName: String
+    var delayAmount: Double
     @State private var animationAmount: CGFloat = 1
     
     var body: some View {
@@ -28,6 +29,7 @@ struct RPSButtonView: View {
                     .animation(
                         Animation.easeInOut(duration: 2)
                             .repeatForever(autoreverses: false)
+                            .delay(delayAmount)
                     )
             )
             .onAppear {
@@ -38,7 +40,7 @@ struct RPSButtonView: View {
 
 struct RPSButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        RPSButtonView(imageName: "Rock")
+        RPSButtonView(imageName: "Rock", delayAmount: 1)
     }
 }
 

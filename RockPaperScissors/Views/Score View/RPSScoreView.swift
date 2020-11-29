@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct RPSScoreView: View {
-    @Binding var gameScore: Double
-    @Binding var playerScore: Double
+    @Binding var gameScore: Int
+    @Binding var playerScore: Int
     
     var body: some View {
         HStack {
@@ -17,7 +17,7 @@ struct RPSScoreView: View {
 
             VStack(spacing: 5) {
                 Text("Player").font(.title)
-                Text("\(playerScore, specifier: "%g")")
+                Text("\(playerScore)")
                     .font(.title2).fontWeight(.black)
             }
             
@@ -25,7 +25,7 @@ struct RPSScoreView: View {
             
             VStack(spacing: 5) {
                 Text("Game").font(.title)
-                Text("\(gameScore, specifier: "%g")")
+                Text("\(gameScore)")
                     .font(.title2).fontWeight(.black)
             }
 
